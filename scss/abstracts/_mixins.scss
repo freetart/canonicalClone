@@ -36,3 +36,23 @@
   max-width: 1000px;
   margin: 0 auto;
 }
+
+@mixin responsive($breakpoint) {
+  @if ($breakpoint == md) {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == sm) {
+    @media (max-width: 500px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint == xs) {
+    @media (max-width: 350px) {
+      @content;
+    }
+  }
+}
