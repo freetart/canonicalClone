@@ -4,25 +4,28 @@
   align-items: center;
   position: fixed;
   width: 100%;
-  padding: 1rem 2rem;
 
   &-logo {
     img {
       width: 15rem;
+      padding: 1rem;
     }
   }
 
   &-links {
     display: flex;
 
-    li {
-      margin: 0 2rem;
-    }
-
     a {
       @include textStyles();
+      padding: 1rem 2rem;
       color: color(white);
       font-size: size(xs);
+      transition: 0.3s ease-in-out;
+
+      &:hover,
+      &:focus {
+        background-color: color(light-purple);
+      }
     }
   }
 }
