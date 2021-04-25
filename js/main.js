@@ -17,3 +17,11 @@ const partnersCarousel = () => {
   new Glide(".glide", partnersObj).mount();
 };
 partnersCarousel();
+
+// set date
+const setDate = () => {
+  const date = document.getElementById("date");
+
+  date.innerHTML = new Date().getFullYear();
+};
+setDate();
