@@ -9,6 +9,10 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="../node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="images/favicon/koala.ico" />
     <link rel="stylesheet" href="css/main.min.css" />
@@ -23,8 +27,8 @@
         </a>
         <div class="nav-content-links">
           <a href="#products">Products</a>
-          <a href="#!" id="partners">Partners</a>
-          <a href="#!" id="careers">Careers</a>
+          <a href="#partners">Partners</a>
+          <a href="#!">Careers</a>
         </div>
       </div>
     </nav>
@@ -309,14 +313,145 @@
       </section>
 
       <!-- partners carousel -->
-      <section class="partners-carousel" id="partners">
-        <div class="partners-carousel-content"></div>
+      <section class="partners-carousel py-5" id="partners">
+        <p class="partners-carousel-title py-5">MEET SOME OF OUR PARTNERS</p>
+
+        <div class="partners-carousel-content">
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img src="./images/companies/Intel.svg" alt="company logo" />
+                </li>
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img
+                    src="./images/companies/fujitsu.svg"
+                    alt="company logo"
+                  />
+                </li>
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img
+                    src="./images/companies/texas-instruments.svg"
+                    alt="company logo"
+                  />
+                </li>
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img
+                    src="./images/companies/hp-enterprise.svg"
+                    alt="company logo"
+                  />
+                </li>
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img
+                    src="./images/companies/supermicro.svg"
+                    alt="company logo"
+                  />
+                </li>
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img src="./images/companies/oracle.svg" alt="company logo" />
+                </li>
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img
+                    src="./images/companies/microsoft.svg"
+                    alt="company logo"
+                  />
+                </li>
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img src="./images/companies/arm.svg" alt="company logo" />
+                </li>
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img src="./images/companies/hp.svg" alt="company logo" />
+                </li>
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img
+                    src="./images/companies/sandisk.svg"
+                    alt="company logo"
+                  />
+                </li>
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img
+                    src="./images/companies/profile-aws.svg"
+                    alt="company logo"
+                  />
+                </li>
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img src="./images/companies/dell.svg" alt="company logo" />
+                </li>
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img src="./images/companies/amd.svg" alt="company logo" />
+                </li>
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img src="./images/companies/ntt.svg" alt="company logo" />
+                </li>
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img src="./images/companies/cisco.svg" alt="company logo" />
+                </li>
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img src="./images/companies/IBM.svg" alt="company logo" />
+                </li>
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img
+                    src="./images/companies/deutsche-telekom.svg"
+                    alt="company logo"
+                  />
+                </li>
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img src="./images/companies/lenovo.svg" alt="company logo" />
+                </li>
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img src="./images/companies/NEC.svg" alt="company logo" />
+                </li>
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img
+                    src="./images/companies/verizon.svg"
+                    alt="company logo"
+                  />
+                </li>
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img
+                    src="./images/companies/china-telecom.svg"
+                    alt="company logo"
+                  />
+                </li>
+                <!-- single slide -->
+                <li class="glide__slide">
+                  <img
+                    src="./images/companies/Huawei-logo.svg"
+                    alt="company logo"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({ offset: 200, duration: 1000, once: true });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
