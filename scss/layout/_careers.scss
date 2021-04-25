@@ -1,0 +1,38 @@
+.careers-section-content {
+  @include sectionSpacing();
+  @include maxWidthLg();
+  color: color(white);
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  // height: 80vh;
+
+  @include responsive(lg) {
+    grid-template-columns: 1fr;
+    padding-top: 10rem;
+  }
+
+  .career-col {
+    h4 {
+      @include headingStyles();
+      font-size: size(lg);
+    }
+
+    .underline {
+      height: 0.1rem;
+      width: 100%;
+      background-color: color(white);
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(xs);
+    }
+
+    blockquote {
+      @include textStyles();
+      font-size: size(md);
+    }
+  }
+}

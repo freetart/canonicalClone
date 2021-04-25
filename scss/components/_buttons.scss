@@ -1,0 +1,13 @@
+.btn-container {
+  @include flexCenter();
+
+  .btn {
+    @include textStyles();
+    display: inline-block;
+    color: color(white);
+    text-align: center;
+    font-size: size(xs);
+    border: 0.1rem solid color(white);
+    padding: 1rem;
+  }
+}
