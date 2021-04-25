@@ -1,0 +1,28 @@
+.nav {
+  background-color: color(dark-purple);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 1rem 2rem;
+
+  &-logo {
+    img {
+      width: 15rem;
+    }
+  }
+
+  &-links {
+    display: flex;
+
+    li {
+      margin: 0 2rem;
+    }
+
+    a {
+      @include textStyles();
+      color: color(white);
+      font-size: size(xs);
+    }
+  }
+}
