@@ -2,6 +2,7 @@
   background-color: color(dark-purple);
   position: fixed;
   width: 100%;
+  z-index: 1000;
 
   .nav-content {
     @include maxWidthLg();
