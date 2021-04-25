@@ -1,4 +1,6 @@
 .partners-carousel {
+  overflow-x: hidden;
+
   &-title {
     @include headingStyles();
     font-size: size(md);
