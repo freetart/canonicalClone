@@ -1,0 +1,58 @@
+.card {
+  &-title {
+    background-color: color(light-purple);
+    padding: 1rem;
+
+    img {
+      width: 15rem;
+    }
+  }
+
+  &-body {
+    background-color: color(light-gray);
+    padding: 1rem;
+
+    p {
+      @include textStyles();
+      font-size: size(xs);
+    }
+
+    a {
+      font-size: size(xs);
+      color: color(light-purple);
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.simple-card {
+  background-color: color(light-gray);
+  padding: 1rem;
+
+  img {
+    width: 5rem;
+    display: block;
+  }
+
+  a {
+    @include textStyles();
+    font-size: size(xxs);
+    padding: 1rem 0;
+    display: block;
+    color: color(light-purple);
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    @include textStyles();
+    font-size: size(xxs);
+  }
+}

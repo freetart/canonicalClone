@@ -1,0 +1,39 @@
+.cards {
+  @include maxWidthMd();
+  @include sectionSpacing();
+
+  &-title {
+    @include textStyles();
+    text-align: center;
+    font-size: size(md);
+    padding-top: 4rem;
+  }
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    @include responsive(lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include responsive(sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .simple-cards-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+
+    @include responsive(lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include responsive(sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
