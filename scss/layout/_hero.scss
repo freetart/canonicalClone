@@ -2,6 +2,8 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
     url("../images/bg.png") center center/cover no-repeat fixed;
   overflow-x: hidden;
+  // bottom
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
 
   .upper-hero-content {
     @include sectionSpacing();

@@ -6,7 +6,7 @@
   place-items: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  // height: 80vh;
+  padding-top: 10rem;
 
   @include responsive(lg) {
     grid-template-columns: 1fr;
