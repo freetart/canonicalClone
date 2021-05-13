@@ -63,17 +63,16 @@ scrollSpy();
 
 // partners carousel
 const partnersCarousel = () => {
-  const width = window.innerWidth;
-
   const partnersObj = {
     type: "carousel",
     autoplay: 1500,
     perView: 4,
+    breakpoints: {
+      650: {
+        perView: 3,
+      },
+    },
   };
-
-  if (width <= 650) {
-    partnersObj.perView = 3;
-  }
 
   new Glide(".glide", partnersObj).mount();
 };
